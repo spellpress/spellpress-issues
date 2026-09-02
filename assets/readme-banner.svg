@@ -49,8 +49,8 @@
   </g>
 
   <g fill="none" stroke="#7d9bff" stroke-width="2">
-    <circle cx="1490" cy="210" r="20"/>
-    <circle cx="1490" cy="210" r="5" fill="#7d9bff"/>
-    <path d="M1454 210h72M1490 174v72"/>
+    <circle cx="1490" cy="224" r="20"/>
+    <circle cx="1490" cy="224" r="5" fill="#7d9bff"/>
+    <path d="M1454 224h72M1490 188v72"/>
   </g>
 </svg>
