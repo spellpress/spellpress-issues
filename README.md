@@ -2,7 +2,7 @@
 
 # spellpress
 
-spellpress builds and prints TCG proxies.
+spellpress is a browser-based tool for preparing trading cards for print.
 
 [**Open spellpress**](https://spellpress.app/) · [**Report a bug**](https://github.com/spellpress/spellpress-issues/issues/new?template=bug.yml) · [**Request a feature**](https://github.com/spellpress/spellpress-issues/issues/new?template=feature.yml)
 
@@ -45,7 +45,3 @@ Suspected security vulnerabilities must not be filed publicly. Use [GitHub priva
 - [Contact](https://spellpress.app/contact)
 - [Privacy Policy](https://spellpress.app/privacy)
 - [Terms of Service](https://spellpress.app/terms)
-
----
-
-<sub>Unless expressly stated otherwise, spellpress is not affiliated with, sponsored by, or endorsed by third-party game publishers, card manufacturers, marketplaces, or intellectual property owners.</sub>
