@@ -1,0 +1,115 @@
+name: Card / printing issue
+description: Report a missing card, wrong printing, artwork problem, or import mismatch
+labels:
+  - card-data
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        spellpress currently resolves Magic: The Gathering cards. Include the set and collector number when the problem affects one specific printing.
+
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue type
+      options:
+        - Card missing
+        - Card name does not resolve
+        - Wrong printing
+        - Wrong artwork
+        - Wrong set or collector number
+        - Double-faced card problem
+        - Promo or printing classification
+        - Card image problem
+        - Import / resolution problem
+        - Other card-data problem
+    validations:
+      required: true
+
+  - type: input
+    id: card-name
+    attributes:
+      label: Card name
+      placeholder: Exact card name
+    validations:
+      required: true
+
+  - type: input
+    id: set
+    attributes:
+      label: Set or set code
+      description: Strongly recommended for a printing-specific report.
+      placeholder: "Example: Innistrad or ISD"
+
+  - type: input
+    id: collector-number
+    attributes:
+      label: Collector number
+      description: Strongly recommended for a printing-specific report.
+      placeholder: "Example: 51"
+
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: Optional. Include this when the language changes the result.
+      placeholder: "Example: English or Japanese"
+
+  - type: dropdown
+    id: face
+    attributes:
+      label: Card face
+      description: Optional. Which face is affected?
+      options:
+        - Front
+        - Back
+        - Both
+        - Not applicable
+        - Not sure
+
+  - type: textarea
+    id: current-result
+    attributes:
+      label: What does spellpress show or do?
+      description: Describe the current card, printing, image, or import result.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-result
+    attributes:
+      label: What did you expect?
+      description: Describe the correct card, printing, image, or import result.
+    validations:
+      required: true
+
+  - type: input
+    id: reference
+    attributes:
+      label: Authoritative reference
+      description: Optional. Link to an official card database or another reliable reference.
+      placeholder: https://...
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: Optional. Drag a screenshot here after checking it for private information.
+
+  - type: textarea
+    id: import-line
+    attributes:
+      label: Import or decklist line
+      description: Optional. Paste the exact line that reproduced the problem.
+      placeholder: 1 Delver of Secrets (ISD) 51
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues for this card or printing
+          required: true
+        - label: I have not included private project data, proprietary artwork, or other sensitive information
+          required: true

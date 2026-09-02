@@ -1,0 +1,119 @@
+name: Bug report
+description: Report something in spellpress that is broken or behaves unexpectedly
+labels:
+  - bug
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Public issues can be read by anyone. Use the [contact page](https://spellpress.app/contact) for private or account-specific details.
+
+  - type: dropdown
+    id: affected-area
+    attributes:
+      label: Affected area
+      description: Where did the problem happen?
+      options:
+        - Add cards / importing
+        - Deck / Builder
+        - Art or printing selection
+        - Browse
+        - Print setup
+        - Print preview
+        - Export / PDF
+        - Upscaling
+        - Accounts / sync
+        - Performance
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the result you saw, including any error message.
+      placeholder: Describe what went wrong.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect?
+      description: Describe the result you expected instead.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: Steps to reproduce
+      description: Start from opening the current deployed app and list the shortest reliable path to the problem.
+      placeholder: |
+        1. Open...
+        2. Add...
+        3. Choose...
+        4. See...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: How often does it happen?
+      options:
+        - Every time
+        - Most times
+        - Sometimes
+        - Once
+        - Not sure
+
+  - type: textarea
+    id: relevant-details
+    attributes:
+      label: Relevant cards, deck, printing, or print settings
+      description: Include only details that help reproduce this problem. Do not upload a private project file or proprietary artwork.
+      placeholder: Card names, set and collector number, import line, page size, card size, bleed, or other relevant settings
+
+  - type: input
+    id: browser
+    attributes:
+      label: Browser and version
+      description: Find the version in your browser's About screen.
+      placeholder: "Example: Safari 19.1 or Firefox 142"
+    validations:
+      required: true
+
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating system and device
+      placeholder: "Example: macOS 16 on MacBook Air or iOS 20 on iPhone 17"
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or recordings
+      description: Optional. Drag files here after checking that they contain no private or sensitive information.
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Add anything else that is needed to understand the problem.
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues for the same problem
+          required: true
+        - label: I have not included passwords, account secrets, private account data, or other sensitive information
+          required: true
+        - label: I refreshed or retried on the current deployed app where reasonable
+          required: true

@@ -1,0 +1,83 @@
+name: Feature request
+description: Describe a workflow or outcome spellpress could improve
+labels:
+  - feature
+  - needs-triage
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Start with the result you need. A proposed implementation is optional.
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to accomplish?
+      description: Describe the task or workflow, not only the feature name.
+      placeholder: I am trying to...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: affected-area
+    attributes:
+      label: Product area
+      description: Which part of spellpress is closest to this request?
+      options:
+        - Add cards / importing
+        - Deck / Builder
+        - Art or printing selection
+        - Browse
+        - Print setup
+        - Print preview
+        - Export / PDF
+        - Upscaling
+        - Accounts / sync
+        - Performance
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: desired-outcome
+    attributes:
+      label: Desired outcome
+      description: What would a successful result look like?
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-workaround
+    attributes:
+      label: Current workaround
+      description: Optional. How do you handle this today?
+
+  - type: textarea
+    id: proposed-behavior
+    attributes:
+      label: Proposed behavior or example
+      description: Optional. Share an interaction, example, or reference that makes the outcome clearer.
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Who would this help?
+      description: Describe the kind of deck, print job, or workflow that benefits.
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional context
+      description: Optional. Add screenshots or other context after checking them for private information.
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Before submitting
+      options:
+        - label: I searched existing issues for a similar request
+          required: true
+        - label: I have not included private account data or other sensitive information
+          required: true

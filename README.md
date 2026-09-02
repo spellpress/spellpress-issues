@@ -1,47 +1,51 @@
-# Spellpress Issues
+![spellpress public issue tracker with a nine-card print sheet and precision marks](assets/readme-banner.svg)
 
-This is the public issue tracker for [Spellpress](https://spellpress.app).
+# spellpress
 
-Spellpress is closed-source; this repository is used only for bug reports, feature requests, and product feedback.
+spellpress builds and prints TCG proxies.
 
-## Reporting a Bug
+[**Open spellpress**](https://spellpress.app/) · [**Report a bug**](https://github.com/spellpress/spellpress-issues/issues/new?template=bug.yml) · [**Request a feature**](https://github.com/spellpress/spellpress-issues/issues/new?template=feature.yml)
 
-If you've found a problem with Spellpress, please open an issue.
+[**Report a card / printing issue**](https://github.com/spellpress/spellpress-issues/issues/new?template=card-data.yml)
 
-Before submitting, search existing issues to see if it has already been reported.
+## Public issue tracker
 
-Include enough information for us to reproduce the problem, such as:
+This repository accepts bug reports, feature requests, and card or printing-data reports for spellpress.
 
-- What happened
-- What you expected to happen
-- Steps to reproduce it
-- Relevant cards, decks, games, or print settings
-- Screenshots when helpful
+The application source code is not hosted here. Code pull requests are not accepted.
 
-Browser and device information may also be useful for interface or printing issues.
+## Choose a report
 
-## Feature Requests
+| Report | Use it for |
+|---|---|
+| [**Bug report**](https://github.com/spellpress/spellpress-issues/issues/new?template=bug.yml) | Something in spellpress is broken or behaves unexpectedly |
+| [**Feature request**](https://github.com/spellpress/spellpress-issues/issues/new?template=feature.yml) | A workflow or outcome spellpress could improve |
+| [**Card / printing issue**](https://github.com/spellpress/spellpress-issues/issues/new?template=card-data.yml) | A missing card, wrong printing, artwork problem, or import mismatch |
 
-Ideas and suggestions are welcome.
+## Before submitting
 
-When possible, describe the problem or workflow you're trying to improve, along with the change you'd like to see.
+- Search [existing issues](https://github.com/spellpress/spellpress-issues/issues) first
+- Submit one problem or request per issue
+- For bugs, include clear reproduction steps plus browser and device details
+- Add screenshots when they make the problem easier to see
+- For a specific printing, include the set and collector number when possible
+- Never post passwords, API keys, account secrets, or private account data
+- Check project files and custom artwork carefully before uploading them publicly
 
-## Card & Data Issues
+## Private support and security
 
-If something is wrong with a card, image, set, printing, or other card data, please include the game and enough information to identify the specific card or printing.
+For private or account-specific help, use the [spellpress contact page](https://spellpress.app/contact). Do not put private account details in a public issue.
 
-## Please Don't Post Sensitive Information
+Suspected security vulnerabilities must not be filed publicly. Use [GitHub private vulnerability reporting](https://github.com/spellpress/spellpress-issues/security/advisories/new). If that route is unavailable, email [security@spellpress.app](mailto:security@spellpress.app).
 
-GitHub Issues in this repository are public.
+## Useful links
 
-Do not include passwords, API keys, private account information, or other sensitive data in an issue.
+- [spellpress](https://spellpress.app/)
+- [Browse](https://spellpress.app/browse)
+- [Contact](https://spellpress.app/contact)
+- [Privacy Policy](https://spellpress.app/privacy)
+- [Terms of Service](https://spellpress.app/terms)
 
-## Security
+---
 
-Please do not disclose security vulnerabilities in a public issue.
-
-For security-related reports, contact **security@spellpress.app**.
-
-## Spellpress
-
-[spellpress.app](https://spellpress.app)
+<sub>Unless expressly stated otherwise, spellpress is not affiliated with, sponsored by, or endorsed by third-party game publishers, card manufacturers, marketplaces, or intellectual property owners.</sub>

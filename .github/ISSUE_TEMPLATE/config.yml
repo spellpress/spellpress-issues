@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Private or account-specific support
+    url: https://spellpress.app/contact
+    about: Use the spellpress contact page for help that cannot be discussed publicly.
+  - name: Report a security vulnerability
+    url: https://github.com/spellpress/spellpress-issues/security/advisories/new
+    about: Report suspected security vulnerabilities privately to the maintainers.
